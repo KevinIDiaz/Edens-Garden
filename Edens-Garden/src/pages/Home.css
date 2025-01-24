@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#banner {
+  height: 725px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  z-index: 0;
+  overflow-x: hidden;
+}
+#leaves-1 {
+  z-index: -1;
+  width: 39vw;
+  position: absolute;
+  top: 5%;
+  left: -5%;
+  transform: rotate(-180deg);
+  --parallax-speed: 10;
+}
+
+#leaves-2 {
+  z-index: -1;
+  width: 35vw;
+  position: absolute;
+  left: 68%;
+  top: 30%;
+  --parallax-speed: 45;
+}
+
+#parallax {
+  display: grid;
+  grid-template-areas: "stack";
+  height: 725px;
+}
+
+@keyframes parallax {
+  to {
+    top: calc(30% + var(--parallax-speed) * 5px);
+  }
+}
+
+#parallax > * {
+  grid-area: stack;
+  animation: parallax linear 1000ms;
+  animation-timeline: scroll();
+}
+#banner h1 {
+  color: #356539;
+  font-size: 150px;
+  margin-top: 100px;
+  font-weight: 550;
+}
+
+#banner p {
+  color: #356539;
+  font-size: 15px;
+}
+
+#banner button {
+  margin-top: 5vh;
+  font-size: 1.1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: max-content;
+  color: #356539;
+}
+
+#banner button:hover {
+  color: black;
+}
+
+#about {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aedcae;
+}
+
+#about p {
+  margin: 90px;
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.9;
+}
+
+#specialties {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.items-container {
+  width: 92vw;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-left: 4vw;
+}
+
+.item {
+  display: inline-block;
+  width: 23%;
+  overflow: hidden;
+  margin: 5px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #356539;
+  border-radius: 5px;
+}
+
+.item-img {
+  width: 21.16vw;
+  aspect-ratio: 1/1.25;
+  position: absolute;
+  z-index: 1;
+  border-radius: 1px;
+  transition: filter 0.5s ease-out;
+}
+
+.item-details {
+  width: 100%;
+  aspect-ratio: 1/1.25;
+  z-index: 99;
+  position: relative;
+  top: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  text-align: center;
+  visibility: hidden;
+  transition: filter 0.9s;
+  filter: blur(1px);
+}
+
+.item:hover .item-details {
+  visibility: visible;
+  filter: blur(0.4px);
+}
+
+.item:hover .item-img {
+  filter: brightness(60%);
+}
