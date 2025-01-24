@@ -36,6 +36,13 @@
   padding-top: 60px;
 }
 
+#footer #section-3 :nth-child(5) {
+  margin-bottom: 30px;
+}
+#footer #section-3 p {
+  margin: 15px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -43,4 +50,20 @@ a {
 
 a:hover {
   color: #356539;
+}
+
+@media screen and (max-width: 800px) {
+  #footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer img {
+    width: 175px;
+  }
+  #footer div {
+    width: 100%;
+  }
+  #footer p {
+    font-size: 15px;
+  }
 }
