@@ -169,7 +169,7 @@
     text-align: center;
   }
   #banner button {
-    font-size: 16px;
+    font-size: 14px;
   }
   .items-container {
     display: flex;
@@ -184,5 +184,8 @@
   }
   .item-img {
     width: 60vw;
+  }
+  #about p {
+    font-size: 15px;
   }
 }

@@ -7,6 +7,7 @@
   scrollbar-color: #356539 #bee3ba;
 }
 
+html,
 body {
   background-color: #cdebc5;
   overflow-x: hidden;

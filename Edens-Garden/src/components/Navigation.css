@@ -63,6 +63,7 @@ ul {
   align-items: center;
   transition: all 1s;
   visibility: hidden;
+  transform: translate(100%);
 }
 
 #side img {
