@@ -24,7 +24,7 @@
 }
 
 #footer p {
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   margin: 7px;
 }
@@ -64,6 +64,6 @@ a:hover {
     width: 100%;
   }
   #footer p {
-    font-size: 15px;
+    font-size: 13px;
   }
 }

@@ -83,6 +83,32 @@ ul {
   }
 }
 
-img:hover {
+#menu {
+  border-style: solid;
+  border-width: 2px;
+  transition: all 0.4s;
+  border-color: rgb(0, 0, 0, 0);
+  border-radius: 5px;
+}
+
+#menu:hover {
   cursor: pointer;
+  border-color: black;
+  box-shadow: 2px 2px 0px black;
+  background-color: #aedcae;
+}
+
+#close {
+  border-style: solid;
+  border-width: 2px;
+  transition: all 0.4s;
+  border-color: rgb(0, 0, 0, 0);
+  border-radius: 5px;
+}
+
+#close:hover {
+  cursor: pointer;
+  border-color: black;
+  box-shadow: 2px 2px 0px black;
+  background-color: #aedcae;
 }

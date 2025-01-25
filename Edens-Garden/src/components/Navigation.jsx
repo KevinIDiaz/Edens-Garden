@@ -25,7 +25,7 @@ export function Navigation(){
             
         </div>
         <div id='side'>
-            <img onClick={hideSide} src={close}/>
+            <img onClick={hideSide} id='close' src={close}/>
             <Link to='/References'><button>References</button></Link>
             <Link to='/Contact'><button>Contact</button></Link>
             <Link to='/Menu'><button>Menu</button></Link>

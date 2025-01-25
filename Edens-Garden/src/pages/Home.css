@@ -42,6 +42,7 @@
   display: grid;
   grid-template-areas: "stack";
   height: 725px;
+  overflow-x: hidden;
 }
 
 @keyframes parallax {
@@ -65,6 +66,7 @@
 #banner p {
   color: #356539;
   font-size: 15px;
+  text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
 }
 
 #banner button {
@@ -80,7 +82,7 @@
   color: black;
 }
 
-#about {
+.quote {
   height: auto;
   display: flex;
   justify-content: center;
@@ -88,14 +90,15 @@
   background-color: #aedcae;
 }
 
-#about p {
+.quote p {
   margin: 90px;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   font-style: italic;
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 1.9;
+  text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.35);
 }
 
 #specialties {
@@ -120,6 +123,7 @@
   border-width: 3px;
   border-color: #356539;
   border-radius: 5px;
+  box-shadow: 10px 7px 10px rgb(0, 0, 0, 0.5);
 }
 
 .item-img {
@@ -157,6 +161,12 @@
   filter: brightness(60%);
 }
 
+#review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 800px) {
   #leaves-2 {
     width: 50vw;
@@ -169,7 +179,7 @@
     text-align: center;
   }
   #banner button {
-    font-size: 14px;
+    font-size: 12px;
   }
   .items-container {
     display: flex;
@@ -187,5 +197,11 @@
   }
   #about p {
     font-size: 15px;
+  }
+  #banner h1 {
+    font-size: 130px;
+  }
+  #about p {
+    margin: 20px;
   }
 }

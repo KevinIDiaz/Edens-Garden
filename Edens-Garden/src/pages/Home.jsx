@@ -23,7 +23,7 @@ export function Home(){
             
         </div>
         
-        <div id='about'>
+        <div className='quote'>
             <p>Nestled at the crossroads of culinary artistry and sustainability, Eden’s Garden offers a plant-based dining experience unlike any other. Every dish tells a story of fresh, organic ingredients, skillfully transformed into elegant masterpieces. Whether you're celebrating a special moment or seeking an indulgent escape, Eden’s Garden is your sanctuary.</p>
         </div>
         <div id='specialties'>
@@ -63,6 +63,12 @@ export function Home(){
                 </div>
             </div>
             
+        </div> 
+        <div className="quote">
+            <p>Our farm-to-table philosophy ensures that every ingredient is thoughtfully sourced from local, sustainable farms. By prioritizing eco-friendly practices, Eden’s Garden delivers a dining experience that harmonizes indulgence with responsibility.</p>
+        </div>
+        <div id='review'>
+            <h2>Experiences</h2>
         </div>
         </>
         
