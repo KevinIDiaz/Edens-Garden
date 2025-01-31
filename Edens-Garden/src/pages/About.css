@@ -16,6 +16,46 @@
   line-height: 1.7;
   margin-left: 40px;
 }
+#sustainability-section {
+  padding: 50px 10vw;
+  background-color: #ecfadc;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+#sustainability-section h2 {
+  font-size: 32px;
+  color: #356539;
+  margin-bottom: 20px;
+}
+
+#sustainability-section h3 {
+  font-size: 24px;
+  color: #356539;
+  margin-top: 30px;
+}
+
+#sustainability-section p {
+  margin-bottom: 15px;
+}
+
+#sustainability-section ul {
+  margin-left: 12px;
+}
+
+#sustainability-section ul li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+  font-size: 15px;
+  list-style: circle;
+  text-align: left;
+  margin-left: 10px;
+  font-family: "Alice", serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 1.5px;
+}
 
 @media screen and (max-width: 1150px) {
   #about-cover p {
@@ -48,5 +88,13 @@
 
 @media screen and (max-width: 400px) {
   #about-cover p {
+    width: 75%;
+    font-size: 14px;
+    height: auto;
+    margin-left: 20px;
+  }
+  #about-cover {
+    justify-content: center;
+    align-items: center;
   }
 }

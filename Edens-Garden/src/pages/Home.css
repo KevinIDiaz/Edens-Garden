@@ -106,6 +106,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
+  background-color: #ddf2d1;
 }
 
 .items-container {
@@ -148,13 +149,13 @@
   color: white;
   text-align: center;
   visibility: hidden;
-  transition: filter 0.9s;
+  transition: filter 0.8s;
   filter: blur(1px);
 }
 
 .item:hover .item-details {
   visibility: visible;
-  filter: blur(0.4px);
+  filter: blur(0.3px);
 }
 
 .item:hover .item-img {
