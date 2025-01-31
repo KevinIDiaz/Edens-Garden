@@ -117,3 +117,18 @@
     width: 90vw;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .carousel {
+    height: 100vw;
+  }
+  .carousel-wrapper {
+    height: 195px;
+  }
+  .card p {
+    font-size: 15px;
+  }
+  .card {
+    width: 90vw;
+  }
+}

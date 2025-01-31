@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import './Home.css'
 import leaves from '/leaves.svg'
-import image from '/banner.jpg'
+
+import risotto from '/risotto.jpg'
+import truffle from '/truffle.jpg'
+import saffron from '/saffron.jpg'
+import avocado from '/avocado.jpg'
 import { Carousel } from "../components/Carousel";
 
 export function Home(){
@@ -54,7 +58,7 @@ export function Home(){
             <h2>Specialties</h2>
             <div className="items-container">
                 <div className='item'>
-                    <img className='item-img'src={image}/>
+                    <img className='item-img'src={risotto}/>
                     <div className="item-details">
                         <h3>Velvety Beetroot Risotto
                         </h3>
@@ -62,7 +66,7 @@ export function Home(){
                     </div>
                 </div>
                 <div className='item'>
-                    <img className='item-img' src={image}/>
+                    <img className='item-img' src={avocado}/>
                     <div className="item-details">
                         <h3>Charred Avocado Salad
                         </h3>
@@ -70,7 +74,7 @@ export function Home(){
                     </div>
                 </div>
                 <div className='item'>
-                    <img className='item-img' src={image}/>
+                    <img className='item-img' src={truffle}/>
                     <div className="item-details">
                         <h3>Truffle-infused Wild Mushroom Tart
                         </h3>
@@ -78,7 +82,7 @@ export function Home(){
                     </div>
                 </div>
                 <div className='item'>
-                    <img className='item-img' src={image}/>
+                    <img className='item-img' src={saffron}/>
                     <div className="item-details">
                         <h3>Golden Saffron Pistachio Cake
                         </h3>

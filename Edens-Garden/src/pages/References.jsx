@@ -1,9 +1,10 @@
+import './References.css'
 
 export function References(){
     return( 
-        <>
-        <h1>References</h1>
-        </>
+        <div id='ref'>
+        <iframe src='/Edens-Garden/student-copyright-checklist.pdf'></iframe>
+        </div>
         
     )
 }
