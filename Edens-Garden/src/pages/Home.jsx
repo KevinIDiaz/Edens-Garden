@@ -2,8 +2,32 @@ import { Link } from "react-router-dom";
 import './Home.css'
 import leaves from '/leaves.svg'
 import image from '/banner.jpg'
+import { Carousel } from "../components/Carousel";
 
 export function Home(){
+    const reviews = [
+        {
+            summary:'"A Culinary Oasis"',
+            review:'"Eden’s Garden is truly a hidden gem! From the moment I stepped inside, the elegant ambiance and impeccable service made me feel like royalty. The Mushroom Risotto with Truffle Oil was nothing short of perfection—the flavors were so rich and complex that I savored every bite. It’s amazing to see a vegetarian restaurant deliver such refined, unforgettable dishes. I’m already planning my next visit!"',
+            credit: "– Lila M., Food Enthusiast"
+
+        },
+        {
+            summary: '"Sustainability Meets Luxury"',
+            review: '"I’ve never experienced a restaurant that marries sustainability and sophistication so seamlessly. The Zucchini Blossoms Tempura were a revelation—light, crispy, and paired beautifully with the basil-tomato sauce. Eden’s Garden has set a new standard for plant-based fine dining. It’s a place where you can indulge guilt-free while supporting an ethical approach to dining."',
+            credit: '– James R., Conscious Diner'
+        },
+        {
+            summary: '"An Unforgettable Evening"',
+            review: '"I took my partner to Eden’s Garden for our anniversary, and it was one of the best decisions I’ve ever made. The attention to detail was astounding, from the carefully curated menu to the intimate atmosphere. We loved the Heirloom Tomato Tartare—it was vibrant and refreshing, with every element perfectly balanced. This is more than just a meal; it’s an experience we’ll cherish forever."',
+            credit: '– Sofia L., Happy Guest'
+        },
+        {
+            summary: '"Perfection on Every Plate"',
+            review: '"I wasn’t sure what to expect from a vegetarian fine dining restaurant, but Eden’s Garden completely exceeded my expectations. The Grilled Eggplant Steak was hearty and flavorful, and the saffron couscous added a delightful touch. The staff was attentive without being intrusive, and the dessert—Chocolate Avocado Mousse—was the perfect ending to a flawless evening. I’m officially a fan!"',
+            credit: '– Elliot P., First-Time Visitor'
+        }
+    ]
     return(
         <>
         <div id='parallax'>
@@ -69,6 +93,8 @@ export function Home(){
         </div>
         <div id='review'>
             <h2>Experiences</h2>
+            <Carousel reviews={reviews}/>
+            
         </div>
         </>
         
